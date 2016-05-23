@@ -26,7 +26,6 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         animation();
-        masukLewatFacebook();
     }
 
     public void animation(){
@@ -48,10 +47,16 @@ public class MainActivity extends Activity {
         animator.start();
 
     }
-    public void masukLewatFacebook(){
+    public void masukLewatFacebook(View v){
 
 
         Toast.makeText(MainActivity.this, "Anda masuk dengan Facebook", Toast.LENGTH_SHORT).show();
+
+    }
+
+    public void buatAkun(View v){
+
+        Toast.makeText(MainActivity.this, "Kamu buat akun", Toast.LENGTH_SHORT).show();
 
     }
 
