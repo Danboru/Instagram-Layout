@@ -13,43 +13,36 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button tombolMulainya;
-    ImageView gambar;
+    ImageView mImageGrey,mImageOrange;
+    LinearLayout awalnya, akhirnya;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        tombolMulainya = (Button) findViewById(R.id.tombolMulai);
-        gambar = (ImageView) findViewById(R.id.gambarnya);
+        animation();
 
+    }
 
-        tombolMulainya.setOnClickListener(new View.OnClickListener() {
+    public void animation(){
+
+       awalnya = (LinearLayout) findViewById(R.id.awal);
+       akhirnya = (LinearLayout) findViewById(R.id.akhir);
+
+        ValueAnimator animator = ValueAnimator.ofFloat(0f, 1f);
+        animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
-            public void onClick(View v) {
-
-                startColorAnimation(gambar);
-
+            public void onAnimationUpdate(ValueAnimator animation) {
+                akhirnya.setAlpha((Float) animation.getAnimatedValue());
             }
         });
 
-    }
-
-    private void startColorAnimation(View v){
-
-        int colorStart = v.getSolidColor();
-        int colorEnd = 0xffff0000;
-
-        ValueAnimator coloranimator = ObjectAnimator.ofInt(v, "Background Color", colorStart, colorEnd );
-        coloranimator.setDuration(2000);
-        coloranimator.setEvaluator(new ArgbEvaluator());
-        coloranimator.setRepeatCount(1);
-        coloranimator.setRepeatMode(ValueAnimator.REVERSE);
-        coloranimator.start();
+        animator.setDuration(8000);
+        animator.setRepeatMode(ValueAnimator.REVERSE);
+        animator.setRepeatCount(-1);
+        animator.start();
 
     }
-
-
 
 }
