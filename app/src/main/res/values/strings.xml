@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Instagram</string>
+
+    <string-array name="bahasa">
+
+        <item>English</item>
+        <item>Japanese</item>
+        <item>Korean</item>
+        <item>Afrikans</item>
+        <item>Italiano</item>
+        <item>Indonesia</item>
+        <item>Filiphino</item>
+        <item>Germany</item>
+        <item>Arabic</item>
+
+    </string-array>
+
 </resources>

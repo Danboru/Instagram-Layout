@@ -33,17 +33,11 @@
         android:gravity="center"
         >
 
-        <TextView
-            android:id="@+id/testnya"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textColor="#fff"
-            android:text="Bahasa Indonesia"
-            android:gravity="center"
-            android:textSize="10dp"
-            android:textAlignment="center"
-
-            />
+       <Spinner
+           android:id="@+id/spinnerbahasa"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           ></Spinner>
 
     </RelativeLayout>
 

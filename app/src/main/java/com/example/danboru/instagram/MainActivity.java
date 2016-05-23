@@ -9,9 +9,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,6 +22,9 @@ public class MainActivity extends Activity {
 
     LinearLayout awalnya, akhirnya;
     TextView ketentuan, kebijakan;
+    Spinner spinnernya;
+    ArrayAdapter<String> adapter;
+    String[] datanya;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,12 +32,18 @@ public class MainActivity extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
 
+        spinnernya = (Spinner) findViewById(R.id.spinnerbahasa);
         ketentuan = (TextView) findViewById(R.id.ketentuannya);
         kebijakan = (TextView) findViewById(R.id.kebijakannya);
 
         ketentuan.setPaintFlags(ketentuan.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
         kebijakan.setPaintFlags(ketentuan.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
 
+        datanya = getResources().getStringArray(R.array.bahasa);
+
+        adapter = new ArrayAdapter<String>(MainActivity.this,android.R.layout.simple_list_item_1 , datanya);
+
+        spinnernya.setAdapter(adapter);
         animation();
 
 
