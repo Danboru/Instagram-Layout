@@ -8,7 +8,7 @@
         android:id="@+id/awal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#31eb85"
+        android:background="#d00e58"
         android:orientation="vertical"
         >
 
@@ -19,27 +19,31 @@
         android:id="@+id/akhir"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#cb0505"
+        android:background="#8646a6"
         android:alpha="0"
         android:orientation="vertical"
         >
     </LinearLayout>
 
-    <LinearLayout
+    <RelativeLayout
+        android:id="@+id/atas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:gravity="center"
         >
 
         <TextView
+            android:id="@+id/testnya"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Test"
-            android:textAppearance="?android:textAppearanceLarge"
-            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:text="Textnya"
+            android:gravity="center"
+            android:textSize="70dp"
+            android:textAlignment="center"
+
             />
 
-    </LinearLayout>
+    </RelativeLayout>
 
 </RelativeLayout>
