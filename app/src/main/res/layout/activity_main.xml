@@ -65,18 +65,13 @@
         android:layout_gravity="center"
         >
 
-        <View
-            android:id="@+id/kiri"
-            android:layout_alignParentLeft="true"
-            android:layout_width="145dp"
-            android:layout_height="match_parent"
-            ></View>
+
 
         <ImageView
             android:id="@+id/logonya"
             android:layout_toRightOf="@+id/kiri"
-            android:layout_width="130dp"
-            android:layout_height="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
             android:src="@drawable/instagram_white"
             android:layout_gravity="center"
             />
@@ -104,12 +99,7 @@
             android:textColor="#fff"
             />
 
-        <View
-            android:id="@+id/kanan"
-            android:layout_toRightOf="@+id/logonya"
-            android:layout_width="145dp"
-            android:layout_height="match_parent"
-            ></View>
+
 
     </RelativeLayout>
 
@@ -236,11 +226,23 @@
     <LinearLayout
         android:id="@+id/pemisah3"
         android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:background="#3d5e5e"
+        android:layout_height="30dp"
         android:layout_below="@+id/syarat"
         android:orientation="horizontal"
-        ></LinearLayout>
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/ketentuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="7dp"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:text="Dengan mendaftar, Anda menyetujui Ketentuan &amp; Kebijakan Privasi kami"
+            />
+
+    </LinearLayout>
 
 
 
@@ -248,10 +250,32 @@
         android:id="@+id/punyaakun"
         android:layout_width="match_parent"
         android:layout_height="43dp"
-        android:background="#0cdcdc"
         android:layout_below="@+id/pemisah3"
         android:orientation="horizontal"
-        ></LinearLayout>
+        android:background="#32ffffff"
+        android:alpha="0.5"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sudah Punya Akun ?"
+            android:textSize="8dp"
+            android:textColor="#fff"
+            />
+
+        <TextView
+            android:layout_marginLeft="4dp"
+            android:id="@+id/masuk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masuk"
+            android:textSize="8dp"
+            android:textColor="#fff"
+            />
+
+    </LinearLayout>
 
 
 </RelativeLayout>
