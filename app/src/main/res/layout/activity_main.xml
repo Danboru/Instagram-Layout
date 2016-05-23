@@ -28,7 +28,7 @@
     <RelativeLayout
         android:id="@+id/atas"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:orientation="horizontal"
         android:gravity="center"
         >
@@ -37,12 +37,78 @@
             android:id="@+id/testnya"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Textnya"
+            android:textColor="#fff"
+            android:text="Bahasa Indonesia"
             android:gravity="center"
-            android:textSize="70dp"
+            android:textSize="10dp"
             android:textAlignment="center"
 
             />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/pemisah"
+        android:layout_below="@+id/atas"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        ></View>
+
+
+
+    <RelativeLayout
+        android:id="@+id/logoinstagram"
+        android:layout_below="@+id/pemisah"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+
+        <View
+            android:id="@+id/kiri"
+            android:layout_alignParentLeft="true"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            ></View>
+
+        <ImageView
+            android:id="@+id/logonya"
+            android:layout_toRightOf="@+id/kiri"
+            android:layout_width="140dp"
+            android:layout_height="80dp"
+            android:src="@drawable/instagram_white"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Silahkan mendaftar untuk melihat"
+            android:layout_below="@+id/logonya"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="foto dan video dari teman anda"
+            android:layout_below="@+id/text1"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            />
+
+        <View
+            android:id="@+id/kanan"
+            android:layout_toRightOf="@+id/logonya"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            ></View>
 
     </RelativeLayout>
 
