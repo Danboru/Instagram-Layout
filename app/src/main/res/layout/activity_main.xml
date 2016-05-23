@@ -29,15 +29,25 @@
         android:id="@+id/atas"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:gravity="center"
+        android:layout_centerHorizontal="true"
         >
 
-       <Spinner
-           android:id="@+id/spinnerbahasa"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           ></Spinner>
+
+        <TextView
+            android:id="@+id/bahasanya"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:text="Pilih Bahasa"
+            android:onClick="pilihbahasanya"
+            android:clickable="true"
+
+            />
+
 
     </RelativeLayout>
 

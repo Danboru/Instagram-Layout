@@ -21,10 +21,7 @@ import android.widget.Toast;
 public class MainActivity extends Activity {
 
     LinearLayout awalnya, akhirnya;
-    TextView ketentuan, kebijakan;
-    Spinner spinnernya;
-    ArrayAdapter<String> adapter;
-    String[] datanya;
+    TextView ketentuan, kebijakan, bahasanya;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,20 +29,15 @@ public class MainActivity extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
 
-        spinnernya = (Spinner) findViewById(R.id.spinnerbahasa);
         ketentuan = (TextView) findViewById(R.id.ketentuannya);
         kebijakan = (TextView) findViewById(R.id.kebijakannya);
+        bahasanya = (TextView) findViewById(R.id.bahasanya);
+
 
         ketentuan.setPaintFlags(ketentuan.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
         kebijakan.setPaintFlags(ketentuan.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
 
-        datanya = getResources().getStringArray(R.array.bahasa);
-
-        adapter = new ArrayAdapter<String>(MainActivity.this,android.R.layout.simple_list_item_1 , datanya);
-
-        spinnernya.setAdapter(adapter);
         animation();
-
 
 
     }
@@ -96,6 +88,12 @@ public class MainActivity extends Activity {
     public void kebijakan(View v){
 
         Toast.makeText(MainActivity.this, "Anda Membuka Kebijakan", Toast.LENGTH_SHORT).show();
+
+    }
+
+    public void pilihbahasanya(View v){
+
+        Toast.makeText(MainActivity.this, "Pemilihan bahasa", Toast.LENGTH_SHORT).show();
 
     }
 
