@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -25,7 +26,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         animation();
-
+        masukLewatFacebook();
     }
 
     public void animation(){
@@ -45,6 +46,12 @@ public class MainActivity extends Activity {
         animator.setRepeatMode(ValueAnimator.REVERSE);
         animator.setRepeatCount(-1);
         animator.start();
+
+    }
+    public void masukLewatFacebook(){
+
+
+        Toast.makeText(MainActivity.this, "Anda masuk dengan Facebook", Toast.LENGTH_SHORT).show();
 
     }
 
