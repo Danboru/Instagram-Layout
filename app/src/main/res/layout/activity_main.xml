@@ -239,7 +239,40 @@
             android:textSize="7dp"
             android:textColor="#fff"
             android:layout_gravity="center"
-            android:text="Dengan mendaftar, Anda menyetujui Ketentuan &amp; Kebijakan Privasi kami"
+            android:text="Dengan mendaftar, Anda menyetujui "
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="7dp"
+            android:textColor="#fff"
+            android:text="Ketentuan"
+            android:onClick="ketentuan"
+            android:clickable="true"
+            android:id="@+id/ketentuannya" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="7dp"
+            android:textColor="#fff"
+            android:text=" &amp; "
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kebijakan Privasi"
+            android:textSize="7dp"
+            android:textColor="#fff"
+            android:onClick="kebijakan"
+            android:clickable="true"
+            android:id="@+id/kebijakannya" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="7dp"
+            android:textColor="#fff"
+            android:text=" kami"
             />
 
     </LinearLayout>
@@ -273,6 +306,8 @@
             android:text="Masuk"
             android:textSize="8dp"
             android:textColor="#fff"
+            android:onClick="masukLangsung"
+            android:clickable="true"
             />
 
     </LinearLayout>
