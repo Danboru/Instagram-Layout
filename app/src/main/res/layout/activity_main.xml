@@ -125,7 +125,7 @@
 
         <LinearLayout
             android:id="@+id/latarFacebook"
-            android:layout_width="380dp"
+            android:layout_width="360dp"
             android:layout_height="35dp"
             android:background="#fff"
             android:gravity="center"
@@ -169,7 +169,7 @@
         >
 
         <View
-            android:layout_width="168dp"
+            android:layout_width="160dp"
             android:layout_height="1dp"
             android:background="#fff"
             android:layout_marginRight="10dp"
@@ -185,7 +185,7 @@
             />
 
         <View
-            android:layout_width="168dp"
+            android:layout_width="160dp"
             android:layout_height="1dp"
             android:background="#fff"
             android:layout_marginLeft="10dp"
