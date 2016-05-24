@@ -55,7 +55,7 @@
         android:id="@+id/pemisah"
         android:layout_below="@+id/atas"
         android:layout_width="wrap_content"
-        android:layout_height="140dp"
+        android:layout_height="120dp"
         ></View>
 
 
@@ -64,7 +64,7 @@
         android:id="@+id/logoinstagram"
         android:layout_below="@+id/pemisah"
         android:layout_width="wrap_content"
-        android:layout_height="110dp"
+        android:layout_height="80dp"
         android:orientation="horizontal"
         android:layout_gravity="center"
         >
@@ -75,7 +75,7 @@
             android:id="@+id/logonya"
             android:layout_toRightOf="@+id/kiri"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
             android:src="@drawable/instagram_white"
             android:layout_gravity="center"
             />
@@ -118,41 +118,41 @@
     <LinearLayout
         android:id="@+id/facebook"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:layout_below="@+id/dibawahlogo"
         android:gravity="center"
-        >
+        android:orientation="horizontal">
 
         <LinearLayout
             android:id="@+id/latarFacebook"
-            android:layout_width="360dp"
-            android:layout_height="35dp"
+            android:layout_width="350dp"
+            android:layout_height="25dp"
             android:background="#fff"
             android:gravity="center"
             android:orientation="horizontal"
-            >
+            android:weightSum="1">
 
             <ImageView
                 android:id="@+id/logonya"
                 android:layout_toRightOf="@+id/kiri"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
                 android:src="@drawable/fb"
                 android:layout_gravity="center"
                 />
 
             <TextView
                 android:id="@+id/masukfacebook"
-                android:layout_width="126dp"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="Masuk dengan facebook"
-                android:textSize="10dp"
+                android:textSize="9dp"
                 android:gravity="center"
                 android:textColor="#567db1"
                 android:textStyle="bold"
                 android:onClick="masukLewatFacebook"
                 android:clickable="true"
-                />
+                android:layout_weight="0.05" />
 
         </LinearLayout>
 
@@ -169,7 +169,7 @@
         >
 
         <View
-            android:layout_width="160dp"
+            android:layout_width="150dp"
             android:layout_height="1dp"
             android:background="#fff"
             android:layout_marginRight="10dp"
@@ -185,7 +185,7 @@
             />
 
         <View
-            android:layout_width="160dp"
+            android:layout_width="150dp"
             android:layout_height="1dp"
             android:background="#fff"
             android:layout_marginLeft="10dp"
@@ -233,6 +233,7 @@
         android:layout_height="30dp"
         android:layout_below="@+id/syarat"
         android:orientation="horizontal"
+        android:background="#3dcdc6c6"
         android:gravity="center"
         >
 
@@ -315,6 +316,5 @@
             />
 
     </LinearLayout>
-
 
 </RelativeLayout>
