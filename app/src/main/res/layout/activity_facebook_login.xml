@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.danboru.instagram.FacebookLogin"
+    android:orientation="vertical"
+    android:background="#eceff5"
+    >
+
+    <LinearLayout
+        android:id="@+id/latarfacebook_logo"
+        android:background="#3b5998"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/social_facebook"
+            />
+        
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/pemisah"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"></View>
+
+    <LinearLayout
+        android:id="@+id/logonya_insta"
+        android:background="#eceff5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/insta_facebook"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:background="#eceff5"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/satu"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:textSize="13dp"
+            android:textColor="#a0a4ac"
+            android:text="Masuk ke akun Facebook Anda untuk"
+            />
+
+        <TextView
+            android:id="@+id/dua"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textColor="#a0a4ac"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:text="terhubung dengan Instagram"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="90dp"
+            android:background="@drawable/latar_facebook"
+            android:layout_marginBottom="0dp"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:textColor="#b5b5b5"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="Email atau Telepon"
+                    android:textSize="13dp"
+                    android:paddingLeft="15dp"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d4d4d4"
+                ></View>
+
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="90dp"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Kata Sandi Facebook"
+                        android:background="@android:color/transparent"
+                        android:textColor="#b5b5b5"
+                        android:textSize="13dp"
+                        android:paddingLeft="15dp"
+
+                        />
+
+                </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
