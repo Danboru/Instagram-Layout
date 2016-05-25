@@ -1,3 +1,1 @@
-Gambaran dari Project Sementara
-
-![alt tag](https://raw.githubusercontent.com/Danboru/Instagram-Layout/master/app/src/main/res/raw/ss1.png)
+![alt tag](https://github.com/Danboru/Instagram-Layout/blob/master/ss1.png)
