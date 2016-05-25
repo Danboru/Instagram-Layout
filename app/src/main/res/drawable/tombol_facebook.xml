@@ -4,16 +4,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <solid
-        android:color="#1a5a55"
+        android:color="#5f76a8"
         ></solid>
 
-    <stroke
-        android:width="2dp"
-        android:color="#ee7b08"
-        ></stroke>
-
     <corners
-        android:radius="8dp"
+        android:radius="2dp"
         ></corners>
 
 </shape>
