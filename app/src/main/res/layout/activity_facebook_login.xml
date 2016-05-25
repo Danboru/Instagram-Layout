@@ -160,6 +160,7 @@
             android:text="Masuk"
             android:textColor="#fff"
             android:textSize="15dp"
+            android:onClick="masuk_ke_facebook"
             />
 
     </LinearLayout>
@@ -177,7 +178,9 @@
             android:textSize="10dp"
             android:text="Lupa Kata Sandi ?"
             android:textColor="#a0a4ac"
-            />
+            android:onClick="lupasandi"
+            android:clickable="true"
+            android:id="@+id/lupa" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -191,8 +194,10 @@
             android:layout_height="wrap_content"
             android:textSize="10dp"
             android:text="Pusat Bantuan"
+            android:clickable="true"
             android:textColor="#a0a4ac"
-            />
+            android:onClick="bantuanmasuk"
+            android:id="@+id/bantuan" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -205,9 +210,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="10dp"
+            android:clickable="true"
             android:text="Buat Akun"
             android:textColor="#a0a4ac"
-            />
+            android:onClick="buatakun"
+            android:id="@+id/buat" />
 
     </LinearLayout>
 

@@ -79,7 +79,8 @@ public class MainActivity extends Activity {
 
     public void masukLangsung(View v){
 
-        Toast.makeText(MainActivity.this, "Masuk Instagram", Toast.LENGTH_SHORT).show();
+        Intent panggil_instagram = new Intent(MainActivity.this, InstagramLogin.class);
+        startActivity(panggil_instagram);
 
     }
 

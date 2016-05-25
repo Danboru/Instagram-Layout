@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/awal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d00e58"
+        android:orientation="vertical"
+        >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/akhir"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8646a6"
+        android:alpha="0"
+        android:orientation="vertical"
+        >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/atas"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        >
+
+
+        <TextView
+            android:id="@+id/bahasanya"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:text="Pilih Bahasa"
+            android:onClick="pilihbahasanya"
+            android:clickable="true"
+
+            />
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/pemisah"
+        android:layout_below="@+id/atas"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        ></View>
+
+
+
+    <RelativeLayout
+        android:id="@+id/logoinstagram"
+        android:layout_below="@+id/pemisah"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+
+
+
+        <ImageView
+            android:id="@+id/logonya"
+            android:layout_toRightOf="@+id/kiri"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:src="@drawable/instagram_white"
+            android:layout_gravity="center"
+            />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/dibawahlogo"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/logoinstagram"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <EditText
+            android:layout_width="340dp"
+            android:layout_height="25dp"
+            android:background="#2affffff"
+            android:textSize="10dp"
+            android:hint="Nama Pengguna"
+            android:textColorHint="#e7e7e7"
+            android:paddingLeft="10dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"></View>
+
+        <EditText
+            android:layout_width="340dp"
+            android:layout_height="25dp"
+            android:paddingLeft="10dp"
+            android:background="#2affffff"
+            android:textColorHint="#e7e7e7"
+            android:textSize="10dp"
+            android:hint="Kata Sandi"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="340dp"
+        android:layout_height="2dp"
+        android:textColor="#dfdddd"
+        android:paddingBottom="10dp"
+        android:layout_above="@+id/facebook"
+        ></View>
+
+    <LinearLayout
+        android:id="@+id/facebook"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/dibawahlogo"
+        android:gravity="center"
+        android:orientation="vertical">
+
+            <Button
+                android:layout_width="340dp"
+                android:layout_height="30dp"
+                android:background="#81dadada"
+                android:textColor="#77dfdddd"
+                android:textSize="10dp"
+                android:text="Masuk"
+                android:onClick="masuk_ke_instagram"
+                />
+
+    </LinearLayout>
+
+    <View
+        android:layout_below="@+id/facebook"
+        android:layout_marginTop="10dp"
+        android:layout_width="340dp"
+        android:layout_height="2dp"
+        android:textColor="#dfdddd"
+        ></View>
+
+    <LinearLayout
+        android:id="@+id/lupa"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/facebook"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/buatakun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lupa Detail Informasi Masuk Anda ?"
+            android:textSize="7dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:gravity="center"
+
+            />
+
+        <TextView
+            android:id="@+id/buatakun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Dapatkan Bantuan untuk Masuk"
+            android:textSize="7dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:onClick="bantuanmasuk"
+            android:clickable="true"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/atau"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/lupa"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <View
+            android:layout_width="155dp"
+            android:layout_height="1dp"
+            android:background="#fff"
+            android:layout_marginRight="10dp"
+            ></View>
+
+        <TextView
+            android:id="@+id/ataunya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="10dp"
+            android:text="Atau"
+            />
+
+        <View
+            android:layout_width="155dp"
+            android:layout_height="1dp"
+            android:background="#fff"
+            android:layout_marginLeft="10dp"
+            ></View>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/pemisah2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/atau"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/logo_kecil"
+            />
+
+        <TextView
+            android:id="@+id/buatakun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masuk Dengan Facebook"
+            android:paddingLeft="6dp"
+            android:textSize="8dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:onClick="masukdenganfacebook"
+            android:clickable="true"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/syarat"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/pemisah2"
+        android:orientation="horizontal"
+        ></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pemisah3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/syarat"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/punyaakun"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_below="@+id/pemisah3"
+        android:orientation="horizontal"
+        android:background="#32ffffff"
+        android:alpha="0.5"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tidak Punya Akun ?"
+            android:textSize="8dp"
+            android:textColor="#fff"
+            />
+
+        <TextView
+            android:layout_marginLeft="4dp"
+            android:id="@+id/masuk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buat Akukn."
+            android:textSize="8dp"
+            android:textColor="#fff"
+            android:onClick="masukLangsung"
+            android:clickable="true"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
