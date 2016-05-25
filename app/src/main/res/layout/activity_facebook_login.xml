@@ -6,6 +6,7 @@
     tools:context="com.example.danboru.instagram.FacebookLogin"
     android:orientation="vertical"
     android:background="#eceff5"
+    android:gravity="center"
     >
 
     <LinearLayout
@@ -76,9 +77,10 @@
 
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="110dp"
         android:gravity="center"
+        android:layout_centerHorizontal="true"
         android:orientation="vertical"
         >
 
@@ -149,7 +151,8 @@
     <LinearLayout
         android:gravity="center"
         android:id="@+id/tombol_facebook"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_height="40dp"
         >
 
