@@ -54,7 +54,7 @@
         android:id="@+id/pemisah"
         android:layout_below="@+id/atas"
         android:layout_width="wrap_content"
-        android:layout_height="120dp"
+        android:layout_height="100dp"
         ></View>
 
 
@@ -232,7 +232,6 @@
         android:layout_height="30dp"
         android:layout_below="@+id/syarat"
         android:orientation="horizontal"
-        android:background="#3dcdc6c6"
         android:gravity="center"
         >
 

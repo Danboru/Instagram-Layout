@@ -5,6 +5,7 @@ import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.app.Activity;
 import android.app.FragmentManager;
+import android.content.Intent;
 import android.graphics.Paint;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -65,8 +66,8 @@ public class MainActivity extends Activity {
     }
     public void masukLewatFacebook(View v){
 
-
-        Toast.makeText(MainActivity.this, "Anda masuk dengan Facebook", Toast.LENGTH_SHORT).show();
+        Intent panggil_facebook = new Intent(MainActivity.this, FacebookLogin.class);
+        startActivity(panggil_facebook);
 
     }
 
