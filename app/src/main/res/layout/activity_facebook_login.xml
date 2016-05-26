@@ -85,7 +85,7 @@
         >
 
         <LinearLayout
-            android:layout_width="360dp"
+            android:layout_width="280dp"
             android:layout_height="90dp"
             android:background="@drawable/latar_facebook"
             android:layout_marginBottom="0dp"
@@ -157,7 +157,7 @@
         >
 
         <Button
-            android:layout_width="355dp"
+            android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:background="@drawable/tombol_facebook"
             android:text="Masuk"
