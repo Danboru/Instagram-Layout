@@ -69,7 +69,7 @@ public class InstagramLogin extends Activity {
 
     }
 
-    public void masukLangsung(){
+    public void masukLangsung(View v){
 
         Intent instagram = new Intent(InstagramLogin.this, MainActivity.class);
         startActivity(instagram);
