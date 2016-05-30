@@ -1,1 +1,3 @@
-![alt tag](https://github.com/Danboru/Instagram-Layout/blob/master/ss1.png)
+#Gradien
+
+![alt tag](https://media.giphy.com/media/xT4uQrmeazOkUZ03K0/giphy.gif)
