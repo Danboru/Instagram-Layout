@@ -1,7 +1,8 @@
-#Gradien
+#Instagram Layout
+Latihan penggunaan AnimatorValue, dan memanfaatkannya untuk membuat degradasi warna, meski masih terbatas dengan 2 warna saja.
 
-![alt tag](https://github.com/Danboru/Instagram-Layout/blob/master/Gradien.gif)
+###Gradien
+![gradien](https://github.com/Danboru/Instagram-Layout/blob/master/Gradien.gif)
 
-#Demo
-
-![alt tag](https://github.com/Danboru/Instagram-Layout/blob/master/Demo.gif)
+###Demo
+![demonya](https://github.com/Danboru/Instagram-Layout/blob/master/Demo.gif)
